@@ -32,3 +32,13 @@
 - 入门篇（第1章-第5章）主要介绍了Flutter技术产生的背景、常用的组件以及布局方式，通过入门篇的学习，读者可以掌握如何使用Flutter来构建UI界面。
 - 进阶篇（第6章-第14章），包括卡滚动组件、事件机制、动画、自定义组件、文件和网络、国际化以及Flutter框架原理等，通过这部分内容，读者可以对Flutter整体构建及原理有一个深入的认识。
 - 实例篇（第15章），本章主要通过一个简版的Github APP来将前面介绍的内容串起来，让开发者对一个完整的Flutter APP开发流有个了解。
+
+## 本地启动
+# 1. 如果遇到依赖问题，先清理
+rm -rf node_modules package-lock.json
+
+# 2. 安装核心依赖（跳过可选依赖的编译）
+npm install --legacy-peer-deps --ignore-scripts vuepress koa koa-router koa-static '@antv/g2'
+
+# 3. 🌟启动开发服务器 
+npm run dev
